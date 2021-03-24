@@ -140,10 +140,126 @@ li{
     width: 44vw;
 }
 p{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+    color: transparent;
     background: linear-gradient(to right,
-     rgb(0, 132, 255) 10%,green 60%,yellow 30% );
+     rgb(0, 204, 255) 10%,green 60%,yellow 30% );
 position: absolute;
-top: 40%;
-height: 22vh;
+top: 10%;
+right: 30%;
+height: 12vh;
 width: 44vw;
+-webkit-background-clip: text;
+background-clip: text;
+background-position: center center;
+text-shadow: 2px 10px black;
+
+}
+form{
+    margin: 5% auto;
+
+}
+fieldset{
+    height: 32vh;
+    width: 32vw;
+    margin: 25% auto;
+    position: absolute;
+    top: -10%;
+    left: 33%;
+
+
+}
+input{
+    height: 4vh;
+    width: 22vw;
+    border:none;
+    outline: none;
+
+}
+input:active{
+    border: 0.2rem red dotted;
+}
+input::placeholder{
+    font-size: 1.2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bolder;
+}
+
+
+
+.email{
+    position: absolute;
+    top: 40%;
+    right:  30%;
+    
+}
+button{
+    position: absolute;
+    top:   11vh;
+    height: 4vh;
+    width: 12vw;
+    left:  50%;
+    background-color: blue;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-family: cursive;
+    font-weight: bolder;
+}
+button:focus{
+    color: red;
+   
+}
+
+
+
+.name> input{
+    height: 4vh;
+    width:  24vw;
+    position: relative;
+    left:  3vw;
+    top: 2vh;
+    outline: none;
+    border: none;
+    }
+.name::before{
+    position: absolute;
+    content: "";
+    right:  13vw;
+    left:  -0.1vw;
+    bottom: 0;
+    top: 2vh;
+    height: 8vh;
+    width: 5vh;
+    background-image: url("../icon/download.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+}
+
+
+.email > input{
+    height: 4vh;
+    width:  24vw;
+    position: relative;
+    left:  5vw;
+    top: 2vh;
+    outline: none;
+    border: none;
+    }
+.email::before{
+    position: absolute;
+    content: "";
+    right:  13vw;
+    left:  2vw;
+    bottom: 0;
+    top: 1.5vh;
+    height: 8vh;
+    width: 5vh;
+    background-image: url("../icon/email_256\ \(1\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
 }
