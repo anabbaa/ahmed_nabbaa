@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="UTF-8"/>
+        <meta name="description" content="about me"/>
+        <meta name="author" content="Ahmed Nabbaa"/>
+        <meta name="keywords" content="ahmed nabbaa developer css html javascript
+         syria dci germany hamburg"/>
+        <meta name="viewport" content="device-width, initial-scale=1.0"/>
+        <title>Ahmed Nabbaa</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <body>
+            <header>
+            <div class="hamburger">
+                <div class="hamburger-div first-line "></div>
+                <div class="hamburger-div second-line"></div>
+                <div class="hamburger-div third-line"></div>
+            </div>
+            <div class="drop-menu-father">
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">My Projects</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+               </div> 
+              
+                </header>
+                <div>
+                <p>
+If you like ke page please register on my monthly newlestter
+
+                </p>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+let clicked = false;
+document.querySelector(".hamburger").addEventListener("click", ()=>
+{
+    
+    clicked = !clicked;
+    
+    if(clicked){
+        document.querySelector(".drop-menu-father").style.cssText=
+        "display: block; position: absolute;top: 3vh;left:0;z-index: 1;"
+    }
+    else{
+        document.querySelector(".drop-menu-father").style.cssText=
+        "display: none;"
+    }
+})
+
+
+
+</script>
+
+
+
+        </body>
+    </head>
+</html>
