@@ -13,7 +13,6 @@ body{
     lightgray, #333 50%, #eee 75%, #333 75%)
 }
 header{
-
     height: 12vh;
     width: 100vw;
     background-color: lightgray;
@@ -21,7 +20,6 @@ header{
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    
 }
 header:before{
     position: absolute;
@@ -40,15 +38,12 @@ header:before{
     justify-content: space-evenly;
     flex-direction: column;
     width: 4vh;
-    height:4vh;    
-
+    height:4vh;   
 }
 .hamburger-div{
     width: 4vh;
     border: 0.2rem black solid;
-    
 }
-
 .hamburger:hover .second-line{
     position: absolute;
     animation-name: throw;
@@ -56,12 +51,10 @@ header:before{
     animation-timing-function:ease-out;
     animation-fill-mode: forwards;
 }
-
 @keyframes throw{
     0%{
 opacity: 0.1;
 border: 0.2rem red solid;
-
 }
 100%{
     border: 0.2rem red solid;
@@ -111,7 +104,7 @@ a:hover{
             }
             100%{
                 opacity: 0.1;
-                transition: all 9s00ms ease-in;
+                transition: all 900ms ease-in;
             }    
 }
 ul{
@@ -122,8 +115,6 @@ ul{
     flex-direction: column;
     margin-top: 8vh;
 }
-
-
 li{
     width: 60vw;
     height: 15vh;
@@ -131,14 +122,10 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;   
+}
 
-    
-}
-.p-father{
-    height: 22vh;
-    width: 44vw;
-}
+
 p{
     font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
@@ -147,7 +134,7 @@ p{
     color: transparent;
     background: linear-gradient(to right,
      rgb(0, 204, 255) 10%,green 60%,yellow 30% );
-position: absolute;
+position: relative;
 top: 10%;
 right: 30%;
 height: 12vh;
@@ -156,28 +143,22 @@ width: 44vw;
 background-clip: text;
 background-position: center center;
 text-shadow: 2px 10px black;
-
 }
 form{
     margin: 5% auto;
-
 }
 fieldset{
     height: 32vh;
     width: 32vw;
-    margin: 25% auto;
     position: absolute;
-    top: -10%;
-    left: 33%;
-
-
+    left: 35%;
+    top: 66vh;
 }
 input{
     height: 4vh;
     width: 22vw;
     border:none;
     outline: none;
-
 }
 input:active{
     border: 0.2rem red dotted;
@@ -188,13 +169,6 @@ input::placeholder{
 font-weight: bolder;
 }
 
-
-
-.email{
-    position: absolute;
-    top: 40%;
-    right:  30%;
-    
 }
 button{
     position: absolute;
@@ -209,12 +183,8 @@ button{
     font-weight: bolder;
 }
 button:focus{
-    color: red;
-   
+    color: red;  
 }
-
-
-
 .name> input{
     height: 4vh;
     width:  24vw;
@@ -238,8 +208,6 @@ button:focus{
     background-repeat: no-repeat;
     filter: grayscale(100%);
 }
-
-
 .email > input{
     height: 4vh;
     width:  24vw;
@@ -260,6 +228,24 @@ button:focus{
     width: 5vh;
     background-image: url("../icon/email_256\ \(1\).png");
     background-size: contain;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;   
+}
+footer{
+    margin: 40% auto;
+    text-align: center;
+}
+.heart{
+    color:red;
+    animation-name: heart;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes heart{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
 }
