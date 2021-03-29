@@ -8,8 +8,11 @@
          syria dci germany hamburg"/>
         <meta name="viewport" content="device-width, initial-scale=1.0"/>
         <title>Ahmed Nabbaa</title>
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.css"/>
+        <link rel="stylesheet" href="./css/style.css" media="(min-width:1921px)"/>
+        <link rel="stylesheet" href="./biggerscreen.css/biggerscreen-style.css"media="(max-width:1920px)"/> 
+      <link rel="stylesheet" href="./laptop-css/laptop-style.css"media="(max-width:1024px)"/>
+      <link rel="stylesheet" href="./mob.css/style-mobile.css" media="(max-width:750px)"/>
+<link rel="stylesheet" href="./minimobile-css/mini-mobile-style.css" media="(max-width:500px)"/>
         <body>
             <header>
             <div class="hamburger">
@@ -19,18 +22,16 @@
             </div>
             <div class="drop-menu-father">
                 <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">My Projects</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="http://127.0.0.1:5500/about/index.html">About Me</a></li>
+                    <li><a href="http://127.0.0.1:5500/projects/index.html">My Projects</a></li>
+                    <li><a href="http://127.0.0.1:5500/blog/index.html">Blog</a></li>
+                    <li><a href="http://127.0.0.1:5500/contacts/index.html">Contacts</a></li>
                 </ul>
                </div > 
               
-                </header>
-            
+                </header>            
                 <p>
 If you like my page please register on my monthly Newlestter
-
                 </p>
 
     <form>
@@ -44,37 +45,17 @@ If you like my page please register on my monthly Newlestter
 
             <label></label>
             <label class="email"  >
-             <input class="email-input"  type="text" name="email"
+             <input  type="text" name="email"
              placeholder="Email"/>
            <button>Submit</button>
             </lebel>
-           
-           
-
-
-          
-
         </fieldset>
-
-
-
-
     </form>
 
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer>
+        <h1>Made with <div class="heart">❤️</div>By AHMED</h1>
+        <h2>All copyrights reserved ® <span class="year"></span></h2>
+      </footer>
 
 <script>
 let clicked = false;
@@ -91,14 +72,10 @@ document.querySelector(".hamburger").addEventListener("click", ()=>
         document.querySelector(".drop-menu-father").style.cssText=
         "display: none;"
     }
-})
-
-
-
+});
+let year =  new Date().getFullYear(".year");
+document.querySelector(".year").innerHTML = year;
 </script>
-
-
-
         </body>
     </head>
 </html>
